@@ -13,3 +13,7 @@ spotcol = (0, 127, 127)
 
 d = pygame.display.set_mode((size, size))
 pygame.display.set_caption("Dice Simulator")
+
+for i in range(rolling):
+    n = random.randint(1, 6)
+    d.fill(diecol)
