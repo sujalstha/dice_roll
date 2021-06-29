@@ -1,4 +1,4 @@
-#  random dice roll
+#  random infinite dice roll
 
 import pygame, random, time
 
