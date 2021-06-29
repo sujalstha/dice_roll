@@ -17,3 +17,6 @@ pygame.display.set_caption("Dice Simulator")
 for i in range(rolling):
     n = random.randint(1, 6)
     d.fill(diecol)
+    if n % 2 == 1:
+        pygame.draw.circle(d, spotcol, (m, m), spsz)
+    if n == 2 or n == 3 or n == 4 or n == 5 or n == 6:
