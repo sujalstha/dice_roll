@@ -1,6 +1,7 @@
 #  random dice roll
 
 from sys import exit
+from pygame import gfxdraw
 import pygame
 import random
 import time
@@ -16,6 +17,12 @@ spot_color = (0, 127, 127)
 
 d = pygame.display.set_mode((size, size))
 pygame.display.set_caption("Dice Simulator")
+
+
+def draw_circle(surface, x, y, radius, color):
+    gfxdraw.aacircle(surface, x, y, radius, color)
+    gfxdraw.filled_circle(surface, x, y, radius, color)
+
 
 for i in range(rolling_time):
     n = random.randint(1, 6)
