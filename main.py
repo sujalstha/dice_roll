@@ -7,15 +7,15 @@ import random
 import time
 
 size = 256  # Size of window/dice
-size_of_spots = size // 10
+size_of_spots = size // 10  # Radius
 mid = int(size / 2)
-left = t = int(size / 4)
-right = b = size - left
+left = t = int(size / 4)  # X
+right = b = size - left  # Y
 rolling_time = random.randrange(4, 12)
 dice_color = (255, 255, 127)
-spot_color = (0, 127, 127)
+spot_color = (0, 127, 127)  # Color
 
-window = pygame.display.set_mode((size, size))
+window = pygame.display.set_mode((size, size))  # Surface
 pygame.display.set_caption("Dice Simulator")
 
 for i in range(rolling_time):
