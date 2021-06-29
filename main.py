@@ -29,4 +29,4 @@ while True:
         pygame.draw.circle(d, spotcol, (mid, t), size_of_spots)  # middle top
 
     pygame.display.flip()
-    time.sleep(1)
+    time.sleep(.3)
