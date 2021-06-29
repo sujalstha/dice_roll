@@ -11,7 +11,6 @@ mid = int(size / 2)
 left = t = int(size / 4)
 right = b = size - left
 rolling_time = random.randrange(4, 12)
-print(rolling_time)
 dice_color = (255, 255, 127)
 spot_color = (0, 127, 127)
 
