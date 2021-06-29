@@ -18,5 +18,7 @@ for i in range(rolling):
     n = random.randint(1, 6)
     d.fill(diecol)
     if n % 2 == 1:
-        pygame.draw.circle(d, spotcol, (m, m), spsz)
+        pygame.draw.circle(d, spotcol, (mid, mid), size_of_spots)
     if n == 2 or n == 3 or n == 4 or n == 5 or n == 6:
+        pygame.draw.circle(d, spotcol, (left, b), size_of_spots)  # left bottom
+        pygame.draw.circle(d, spotcol, (right, t), size_of_spots)  # right top
