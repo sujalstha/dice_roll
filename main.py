@@ -18,22 +18,16 @@ spot_color = (0, 127, 127)
 d = pygame.display.set_mode((size, size))
 pygame.display.set_caption("Dice Simulator")
 
-
-def draw_circle(surface, x, y, radius, color):
-    gfxdraw.aacircle(surface, x, y, radius, color)
-    gfxdraw.filled_circle(surface, x, y, radius, color)
-
-
 for i in range(rolling_time):
     n = random.randint(1, 6)
     d.fill(dice_color)
     if n % 2 == 1:
-        draw_circle(d, spot_color, (mid, mid), size_of_spots)
+        pygame.draw.circle(d, spot_color, (mid, mid), size_of_spots)
     if n == 2 or n == 3 or n == 4 or n == 5 or n == 6:
-        draw_circle(d, spot_color, (left, b), size_of_spots)  # left bottom
-        draw_circle(d, spot_color, (right, t), size_of_spots)  # right top
+        pygame.draw.circle(d, spot_color, (left, b), size_of_spots)  # left bottom
+        pygame.draw.circle(d, spot_color, (right, t), size_of_spots)  # right top
     if n == 4 or n == 5 or n == 6:
-        draw_circle(d, spot_color, (left, t), size_of_spots)  # left top
+        pygame.draw.circle(d, spot_color, (left, t), size_of_spots)  # left top
         pygame.draw.circle(d, spot_color, (right, b), size_of_spots)  # right bottom
     if n == 6:
         pygame.draw.circle(d, spot_color, (mid, b), size_of_spots)  # middle bottom
