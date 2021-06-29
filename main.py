@@ -24,5 +24,9 @@ while True:
     if n == 4 or n == 5 or n == 6:
         pygame.draw.circle(d, spotcol, (left, t), size_of_spots)  # left top
         pygame.draw.circle(d, spotcol, (right, b), size_of_spots)  # right bottom
+    if n == 6:
+        pygame.draw.circle(d, spotcol, (mid, b), size_of_spots)  # middle bottom
+        pygame.draw.circle(d, spotcol, (mid, t), size_of_spots)  # middle top
+
     pygame.display.flip()
     time.sleep(0.2)
