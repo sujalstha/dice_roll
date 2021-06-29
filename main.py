@@ -1,4 +1,4 @@
-#  random infinite dice roll
+#  random dice roll
 
 from sys import exit
 import pygame
